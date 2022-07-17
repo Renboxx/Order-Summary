@@ -22,21 +22,16 @@ img {
 }
 
 body {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--pale-blue);
-    position: relative;
     min-height: 100vh;
     padding: 1rem;
-}
-
-.pattern {
-    z-index: -1;
-    position: absolute;
-    width: 100vw;
-    height: auto;
-    top: 0;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 div.card {
@@ -162,4 +157,9 @@ div.attribution a {
     html {
         font-size: 14px;
     }
+    
+    body {
+        background-image: url('images/pattern-background-mobile.svg');   
+    }
+    
 }
